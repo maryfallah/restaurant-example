@@ -1,0 +1,267 @@
+body
+{
+    background-color: #61122f;
+   
+    font-size: 16px;
+    color: #fff;
+
+}
+/*  HEADER  */
+#header-nav
+{
+    background-color: #f6b319;
+    border-radius: 0;
+    border: 0;
+
+}
+#logo-img
+{
+    background: url(../images/H1.svg) no-repeat;
+    width: 150px;
+    height: 150px;
+    margin: 10px 15px 10px 0;
+
+}
+.navbar-brand
+{
+    padding: 25px;
+}
+.navbar-brand h1
+{
+    /* restaurant name */
+    font-family: 'Lora', serif;
+    color: #557c3e;
+    font-size: 1.5em;
+    font-weight: bold;
+    text-shadow: 1px 1px 1px #222;
+    margin-top: 0;
+    margin-bottom: 0;
+    line-height: .75;
+}
+.navbar-brand a:hover, .navbar-brand a:focus
+{
+    /* delete the underline in both hover and focus mood*/
+    text-decoration: none ;
+}
+.navbar-brand p
+{
+    /* kosher cert*/
+    color: #000;
+    font-size: .7em;
+    margin-top: 15px;
+}
+.navbar-brand p span
+{
+    vertical-align: middle;
+    /* text will be center of the star */
+}
+#nav-list
+{
+    margin-top: 10px;
+}
+#nav-list a
+{
+    color: #951c49;
+    text-align: center;
+}
+#nav-list a:hover
+{
+    background-color: #E7E7E7;
+}
+#nav-list a span
+{
+    font-size: 1.8em; /* 80% increas*/
+}
+#phone
+{
+    margin-top: 5px;
+}
+#phone a
+{
+    text-align: right;
+    padding-bottom: 0;
+}
+#phone div
+{
+    color: #557c3e;
+    text-align: right;
+    padding-right: 15px;
+    /* we awesom*/
+}
+/* change the color around border of the buttons*/
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar
+{
+    border: 1px solid #61122f;
+}
+.navbar-header button.navbar-toggle 
+{
+    /* yellow border will be taller and star icon wont jump out of the box*/
+    /* this is happening becuz the menu button is floated */
+    clear: both;
+    margin-top: -30px;
+    /* we want to make the h1 smaller . but cuz we did a -30 margin
+    everthing will collapse again so we do it by making the texts smaller*/
+}
+/*  home page  */
+.container .jumbotron
+{
+    box-shadow: 0 0 50px #3f0c1f;
+    border: 2px solid #3f0c1f;
+}
+#pizza-tile, #sandwitch-tile, #map-tile
+
+{
+    height: 250px;
+    width: 100%; /* 100% of the container div (class xs md sm)not the hole screen*/
+    margin-bottom: 15px;
+    position: relative; /* set up ancer for rest of the child*/
+    border: 2px solid #3f0c1f;
+    overflow: hidden;
+}
+#pizza-tile:hover, #sandwitch-tile:hover, #map-tile:hover
+{
+    box-shadow: 0 1px 5px 1px #cccccc;
+
+}
+#pizza-tile
+{
+    background: url('../images/pizza.jpg') no-repeat;
+    background-position: center;
+
+}
+#sandwitch-tile
+{
+    background: url('../images/sand.jpg') no-repeat;
+    background-position: center;
+
+}
+#pizza-tile span, #sandwitch-tile span, #map-tile span
+{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    text-align: center;
+    font-size: 1.6em;
+    text-transform: uppercase;
+    background-color: #000;
+    color: #fff;
+    opacity: .7; /* see throgh background*/
+}
+
+
+/********** Large devices only **********/
+@media (min-width: 1200px) {
+    .container .jumbotron
+    {
+        background: url('../images/interior-design-lg.jpg') no-repeat;
+        height: 675px;
+    }
+
+}
+
+/********** Medium devices only **********/
+@media (min-width: 992px) and (max-width: 1199px) {
+   
+    #logo-img
+    {
+        background: url(../images/H1.svg) no-repeat;
+        width: 100px;
+        height: 100px;
+        margin: 5px 1px 5px 0;
+    
+    }
+    .container .jumbotron
+    {
+        background: url('../images/interior-design-md.jpg') no-repeat;
+        height: 558px;
+    }
+
+}
+
+/********** Small devices only **********/
+@media (min-width: 768px) and (max-width: 991px) {
+    .container .jumbotron
+    {
+        background: url('../images/interior-design-xs.jpg') no-repeat;
+        height: 432px;
+    }
+
+}
+
+/********** Extra small devices only **********/
+@media (max-width: 767px)
+{
+    .navbar-brand
+    {
+        padding-top: 10px;
+        height: 80px;
+    }
+    .navbar-brand h1 
+    {
+        padding-top: 10px;
+        font-size: 5vw; /* 1vw = 1% of view point width*/
+    }
+    .navbar-brand p 
+    {
+        font-size: .6em;
+        margin-top: 12px;
+    }
+    .navbar-brand p img 
+    {
+        height: 20px;
+    }
+    #collapsable-nav a 
+    {
+        font-size: 1.2em; /* glyph 20%*/ 
+    }
+    #collapsable-nav a span
+    {
+        font-size: 1em; /* glyph 20%*/ 
+        margin-right: 5px;
+    }
+    #call-btn > a {
+        font-size: 1.5em;
+        display: block;
+        margin: 0 20px;
+        padding: 10px;
+        border: 2px solid #fff;
+        background-color: #f6b319;
+        color: #951c49;
+      }
+      #xs-deliver {
+        margin-top: 5px;
+        font-size: .7em;
+        letter-spacing: .1em;
+        text-transform: uppercase;
+      }
+    .container .jumbotron
+    {
+        margin-top: 30px;
+        padding: 0;
+    }
+    #pizza-tile, #sandwitch-tile {
+        width: 360px;
+        margin: 0 auto 15px;
+      }
+}
+  /********** Super extra small devices Only :-) (e.g., iPhone 4) **********/
+@media (max-width: 479px) {
+    /* Header */
+    .navbar-brand h1 { /* Restaurant name */
+      padding-top: 5px;
+      font-size: 6vw;
+    }
+    /* End Header */
+    
+    /* Home page */
+    #pizza-tile, #sandwitch-tile {
+      width: 280px;
+      margin: 0 auto 15px;
+    }
+  }
+  /* End Header */
+
+
+
+
